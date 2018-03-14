@@ -1,11 +1,11 @@
 
 rn=input('Number of points: ');
 hits = 0;
-hitarr = cell(1, 8 * rn);
+hitarr = cell(1, rn);
 miss = 0;
-missarr = cell(1, 8 * rn);
+missarr = cell(1, rn);
 ratio = 0;
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand();
     y = rand(); 
@@ -22,7 +22,7 @@ for i = 1:rn
     end;
     
 end% +++
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand();
     y = rand(); 
@@ -39,7 +39,7 @@ for i = 1:rn
     end;
     
 end %++-
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand();
     y = rand() * -1; 
@@ -56,7 +56,7 @@ for i = 1:rn
     end;
     
 end %+-+
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand();
     y = rand() * -1; 
@@ -73,7 +73,7 @@ for i = 1:rn
     end;
     
 end% +--
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand() * -1;
     y = rand(); 
@@ -90,7 +90,7 @@ for i = 1:rn
     end;
     
 end %-++
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand() * -1;
     y = rand(); 
@@ -107,7 +107,7 @@ for i = 1:rn
     end;
     
 end %-+-
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand() * -1;
     y = rand() * -1; 
@@ -124,7 +124,7 @@ for i = 1:rn
     end;
     
 end %--+
-for i = 1:rn
+for i = 1:rn/8
     % Sample the whole unit cube
     x = rand() * -1;
     y = rand() * -1; 
